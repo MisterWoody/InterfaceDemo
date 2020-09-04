@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary
 {
-    public class PhysicalProductModel : IProductModel
+    public class PhysicalProductModel : PhysicalProductBase, IProductModel
     {
         public string Title { get; set; }
         public bool HasOrderBeenCompleted { get; private set; }
