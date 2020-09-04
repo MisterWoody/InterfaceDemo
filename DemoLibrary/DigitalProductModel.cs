@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary
 {
-    public class DigitalProductModel
+    public class DigitalProductModel : IProductModel
     {
         public string Title { get; set; }
+
+        public bool HasOrderBeenCompleted => throw new NotImplementedException();
 
         public void ShipItem(CustomerModel customer)
         {
