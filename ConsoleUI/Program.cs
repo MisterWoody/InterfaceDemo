@@ -14,7 +14,7 @@ namespace ConsoleUI
             List<IProductModel> cart = AddSampleData();
             CustomerModel customer = GetCustomer();
 
-            foreach (PhysicalProductModel prod in cart)
+            foreach (IProductModel prod in cart)
             {
                 prod.ShipItem(customer);
             }
@@ -41,6 +41,7 @@ namespace ConsoleUI
             output.Add(new PhysicalProductModel { Title = "Nerf Football" });
             output.Add(new PhysicalProductModel { Title = "IAmTimCorey T-Shirt" });
             output.Add(new PhysicalProductModel { Title = "Hard Drive" });
+            output.Add(new DigitalProductModel { Title = "Lesson Source Code" });
 
             return output;
         }
