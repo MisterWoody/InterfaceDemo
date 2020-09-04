@@ -12,7 +12,7 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             List<IProductModel> cart = AddSampleData();
-            CustomerModel customer = GetCustomer();
+            ICustomerModel customer = GetCustomer();
 
             foreach (IProductModel prod in cart)
             {

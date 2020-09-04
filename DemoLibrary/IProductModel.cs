@@ -12,6 +12,6 @@ namespace DemoLibrary
 
         bool HasOrderBeenCompleted { get; }
 
-        void ShipItem(CustomerModel customer);
+        void ShipItem(ICustomerModel customer);
     }
 }

@@ -14,7 +14,7 @@ namespace DemoLibrary
 
         public int TotalDownloadsLeft { get; private set; } = 5;
 
-        public void ShipItem(CustomerModel customer)
+        public void ShipItem(ICustomerModel customer)
         {
             if (HasOrderBeenCompleted == false)
             {

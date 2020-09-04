@@ -11,7 +11,7 @@ namespace DemoLibrary
         public string Title { get; set; }
         public bool HasOrderBeenCompleted { get; private set; }
 
-        public void ShipItem(CustomerModel customer)
+        public void ShipItem(ICustomerModel customer)
         {
             if (HasOrderBeenCompleted == false)
             {
