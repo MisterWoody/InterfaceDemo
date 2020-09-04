@@ -12,7 +12,7 @@ namespace DemoLibrary
 
         public void ShipItem(CustomerModel customer)
         {
-            Console.WriteLine($"Simulating shipping { Title } to { customer.EmailAddress }");
+            Console.WriteLine($"Simulating e-mailing { Title } to { customer.EmailAddress }");
         }
     }
 }
