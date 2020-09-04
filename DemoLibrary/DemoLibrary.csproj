@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CustomerModel.cs" />
     <Compile Include="DigitalProductModel.cs" />
+    <Compile Include="ICustomerModel.cs" />
     <Compile Include="IProductModel.cs" />
     <Compile Include="PhysicalProductBase.cs" />
     <Compile Include="PhysicalProductModel.cs" />
