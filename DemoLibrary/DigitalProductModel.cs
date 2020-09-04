@@ -10,7 +10,9 @@ namespace DemoLibrary
     {
         public string Title { get; set; }
 
-        public bool HasOrderBeenCompleted => throw new NotImplementedException();
+        public bool HasOrderBeenCompleted { get; private set; }
+
+        public int TotalDownloadsLeft { get; private set; } = 5;
 
         public void ShipItem(CustomerModel customer)
         {
