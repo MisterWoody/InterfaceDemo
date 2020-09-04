@@ -16,7 +16,17 @@ namespace DemoLibrary
 
         public void ShipItem(CustomerModel customer)
         {
-            Console.WriteLine($"Simulating e-mailing { Title } to { customer.EmailAddress }");
+            if (HasOrderBeenCompleted == false)
+            {
+                Console.WriteLine($"Simulating e-mailing { Title } to { customer.EmailAddress }");
+                TotalDownloadsLeft -= 1;
+
+                if (TotalDownloadsLeft < 1)
+                {
+                    HasOrderBeenCompleted = true;
+                    TotalDownloadsLeft = 0;
+                }
+            }
         }
     }
 }
