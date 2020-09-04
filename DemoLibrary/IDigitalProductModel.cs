@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary
 {
-    public interface IDigitalProductModel
+    public interface IDigitalProductModel : IProductModel
     {
         int TotalDownloadsLeft { get; }
     }
